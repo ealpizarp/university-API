@@ -57,31 +57,41 @@ The following are the requests supported by the API listed according to the tabl
 
 [register user request](./requests/user/userRegistration.rest)
 
+## Usage
+
+1. Install the necessary packages
+
+    `npm install`
+
+2. Add your database configuration settings in the [database config](./db/db.config.js) file
+
+3. Start the server
+
+    `npm start-dev`
+
+## Request authorzation with JWT
+
+This API uses JWT to authorize requests made to the database, after user registration use the access token provided by the [login request](./requests/user/userLogin.rest) to make request to other tables in the database adding an authorization header. The following is an example to ilustrate the structure of the request.
+
+```
+POST http://localhost:5000/add/professor HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZWFscGl6YXJwIiwiaWF0IjoxNjUyMzIxMDExfQ.X6nAQ6KkCc7xOpS3QPHWOALj4swn7_F6JDNLEQhANlo
+content-type: application/json
+
+{
+    "professorId": "20203481",
+    "professorLastName": "Munguia",
+    "professorName": "Diego"
+}
+```
+
 ## Tools used in this API
 
 * Sequelize
 * Express
-* JWT library
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* jsonwebtoken
+* Rest Client (For testing the requests)
 
 ### NOTE
 
-This was made for an assignment at the Costa Rica institute of Technology. 
+This was made for an assignment at the [Costa Rica institute of Technology](https://www.tec.ac.cr/). 
