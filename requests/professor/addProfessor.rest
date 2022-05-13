@@ -1,0 +1,9 @@
+POST http://localhost:5000/add/professor HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZWFscGl6YXJwIiwiaWF0IjoxNjUyMzIxMDExfQ.X6nAQ6KkCc7xOpS3QPHWOALj4swn7_F6JDNLEQhANlo
+content-type: application/json
+
+{
+    "professorId": "20203481",
+    "professorLastName": "Munguia",
+    "professorName": "Diego"
+}

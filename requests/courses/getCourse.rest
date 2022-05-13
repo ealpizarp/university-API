@@ -1,0 +1,3 @@
+GET http://localhost:5000/get/course/IC-4810 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZWFscGl6YXJwIiwiaWF0IjoxNjUyMzIxMDExfQ.X6nAQ6KkCc7xOpS3QPHWOALj4swn7_F6JDNLEQhANlo
+
