@@ -4,7 +4,7 @@ An API using express and sequelizer to manage a very simple university register 
 
 ## Database diagram
 
-![alt database diagram](./assets/databse-diagram.jpg)
+![alt database diagram](./assets/database-diagram-transparent.drawio.png)
 
 ## Requests
 
